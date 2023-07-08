@@ -26,7 +26,7 @@ ReactDOM.render(
         src: './img/logo/gdps.png'
     }), React.DOM.p({
         className: 'text'
-    }, 'Beautiful DashPS')), React.DOM.div({
+    }, 'BDPS')), React.DOM.div({
         className: 'hamburger',
         id: 'hamburger'
     }, React.DOM.span(null)), React.DOM.nav({
