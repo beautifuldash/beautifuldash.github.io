@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDPS - Admins</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bg.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="bg"></div>
+    <main>
+        <ul class="adms-list">
+            <li class="adms-item">
+                <div class="adms-item-text">
+                    <h2>Deur - GDPS Owner</h2>
+                    <p>Discord: deurgd</p>
+                </div>
+                <img src="./img/adms/deurgd.png" alt="">
+            </li>
+            <li class="adms-item">
+                <img src="./img/adms/vladgmd.png" alt="">
+                <div class="adms-item-text" id="right-adms" style="text-align: right;">
+                    <h2>.vladgmd - Admin</h2>
+                    <p>Discord: .vladgmd</p>
+                </div>
+            </li>
+            <li class="adms-item">
+                <div class="adms-item-text">
+                    <h2>Nerwind93 - Moderator</h2>
+                    <p>Discord: nerw</p>
+                </div>
+                <img src="./img/adms/nerw.png" alt="">
+            </li>
+            <li class="adms-item">
+                <img src="./img/adms/psychovine.png" alt="">
+                <div class="adms-item-text" id="right-adms" style="text-align: right;">
+                    <h2>Vine - Moderator</h2>
+                    <p>Discord: psychovine</p>
+                </div>
+            </li>
+            <li class="adms-item">
+                <div class="adms-item-text">
+                    <h2>z1Lun1x - Moderator</h2>
+                    <p>Discord: z1Lun1x</p>
+                </div>
+                <img src="./img/adms/z1Lun1x.png" alt="">
+            </li>
+        </ul>
+    </main>
+    <footer id="footer"></footer>
+    <script src="./libs/react/react.js"></script>
+    <script src="./libs/react/react-dom.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        const x = window.innerWidth;
+        if(x < 767) {
+            document.querySelectorAll('#right-adms').forEach((e) => {
+                e.style.textAlign = "center";
+            });
+        }
+    </script>
+</body>
+</html>

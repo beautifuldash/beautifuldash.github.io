@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDPS - Level</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bg.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="bg"></div>
+    <main class="home-page">
+        <div class="lvl-container">
+            <div class="lvl-infrmation"></div><br>
+            <div class="lvl-records">
+                <h2 id="records-lenght"></h2><br>
+                <table>
+                    <tr class="first-tr">
+                        <td><h5>Player</h5></td>
+                        <td><h5>Progress</h5></td>
+                        <td><h5>Proofs</h5></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main><br><hr>
+    <div class="footer"><footer id="footer"></footer></div>
+    <script src="./libs/react/react.js"></script>
+    <script src="./libs/react/react-dom.js"></script>
+    <script src="./libs/jquery/jquery.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/dllib.js"></script>
+    <script src="./js/addinfo.js"></script>
+    <script src="./js/setrecs.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        setTimeout(() => {
+            console.log(localStorage.getItem('id'));
+            const trLength = document.getElementsByTagName('tr').length;
+            document.getElementById('records-lenght').innerText = 'Сейчас рекордов на уровне: ' + (trLength - 1);
+        }, 200);
+    </script>
+</body>
+</html>

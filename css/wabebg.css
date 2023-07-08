@@ -1,0 +1,153 @@
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 600px;
+    top: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    z-index: -1;
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+.mainbottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 600px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.info-main-block, .info-main-block-reverse {
+    display: flex;
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.info-main-block img, .info-main-block-reverse img {
+    max-width: 400px;
+}
+
+.info-main-block b, .info-main-block-reverse b {
+    color: #ffaaaa;
+}
+
+.info-main-block h2, .info-main-block-reverse h2 {
+    color: #f2ffaa;
+}
+
+.info-main-block p {
+    margin-right: 5px;
+}
+
+.info-main-block-reverse img {
+    margin-right: 5px;
+}
+
+.info-main-block-reverse {
+    text-align: right;
+}
+
+@media(max-width: 1100px) {
+    .info-main-block, .info-main-block-reverse {
+        display: block;
+        text-align: center;
+    }
+
+    .info-main-block img {
+        margin-top: 10px;
+    }
+
+    .info-main-block-reverse img {
+        margin-bottom: 10px;
+    }
+
+    .mainbottom {
+        height: 1000px;
+    }
+
+    .waveWrapper {
+        bottom: 1000px;
+    }
+}
+
+@media(max-width: 495px) {
+    .info-main-block img, .info-main-block-reverse img {
+        width: 250px;
+    }
+}

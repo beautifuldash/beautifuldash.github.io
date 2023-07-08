@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDPS - Leaders</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bg.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <header id="header"></header>
+    <main>
+        <ul class="leaders-list"></ul>
+    </main>
+    <footer id="footer"></footer>
+    <script src="./libs/react/react.js"></script>
+    <script src="./libs/react/react-dom.js"></script>
+    <script src="./libs/jquery/jquery.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/dllib.js"></script>
+    <script src="./js/setusers.js"></script>
+    <script>
+        setTimeout(() => {
+            const spoileres = document.querySelectorAll('.toggle-spoiler');
+            spoileres.forEach((e) => {
+                e.addEventListener('click', (event) => {
+                    e.classList.toggle('active');
+                    e.previousElementSibling.querySelector('.spoiler-content').classList.toggle('active');   
+                });
+            });
+        }, 100)
+    </script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>
