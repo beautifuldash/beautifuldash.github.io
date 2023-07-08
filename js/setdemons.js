@@ -1,4 +1,4 @@
-const domen = 'http://127.0.0.1:5500/';
+const domen = 'https://beautifuldash.github.io/';
 const app = new Main();
 
 $.get(domen + 'js/dl/add.txt', (data) => {
