@@ -31,3 +31,4 @@
 438 Go SwagLike SwagLike 00:00 Starrate # 25
 227 Check-out-DX 7AA 7AA 01:05 Featured # 20
 454 Bolt ChesterGD ChesterGD 00:32 Starrate # 20
+1 ok pon ChesterGD 00:25 Epic # 1000
